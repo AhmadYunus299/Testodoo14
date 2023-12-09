@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <menuitem
+    id="parent_saya_purchase_id"
+    name="Pembelian"
+    sequence="10"/>
+    <menuitem
+      id="child_saya_purchase_id"
+      name="pembelian"
+      parent="pembelian.parent_saya_purchase_id"
+      action="saya_actions_id" />
+    <menuitem
+      id="child_saya_brand_id"
+      name="brand"
+      parent="pembelian.parent_saya_purchase_id"
+      action="brand_actions_id" />
+    <menuitem
+      id="child_saya_purchase_report_wizard_id"
+      name="Report"
+      parent="pembelian.parent_saya_purchase_id"
+      action="actions_saya_purchase_wizard_report_id" />
+</odoo>
